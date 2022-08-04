@@ -1,0 +1,186 @@
+.container{
+    max-width: 1200px;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: gray;
+    color: aqua;
+    text-transform: uppercase;
+ /* text-align: center; */
+
+ /* for center the element */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+article{
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://media.istockphoto.com/photos/gamer-work-space-concept-top-view-a-gaming-gear-mouse-keyboard-in-picture-id1170073824?b=1&k=20&m=1170073824&s=170667a&w=0&h=E2W21WamGtyTwz03FlSwIaA24uYF3oLIVwZr0uAJCPY=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    text-shadow: 1px 2px red;
+    font-size: 30px;
+
+}
+article h1{
+    text-shadow: 1px 2px red;
+}
+h1{
+    text-align: center;
+}
+
+.imgcontainer{
+display: flex;
+justify-content: space-evenly;
+background-color: black;
+
+
+}
+
+.imgbox{
+    width:200px ;
+    height: 200px;
+    /* background-color: rebeccapurple; */
+    border-radius: 50%;
+}
+.imgbox img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+main{
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    background-color: grey;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+}
+main h1{
+    display: flex;
+    justify-content: left;
+}
+#sec-2{
+    display: flex;
+}
+aside{
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex wrap means kisi ko apni space nhi dega */
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+}
+
+aside > .box{
+    height: 150px;
+    background-color: yellowgreen;
+    width: 100%;
+}
+.box h1{
+    color: aliceblue !important;
+}
+.imgbox1{
+    width:200px ;
+    height: 400px;
+    background-color: lightskyblue;
+    /* border-radius: 50%; */
+}
+/* footer{
+    width: 100%;
+    height: 10vh;
+    background-color: red ;
+    color: aqua;
+    margin-top: 10px;
+    text-transform: uppercase;
+   text-align: center; 
+
+   for center the element 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}*/
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 14px 16px;
+    float: left;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+.nav a:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+.nav a.active {
+    background-color: black;
+    color: white;
+  }
+  
+.imgcontainer1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightgray;
+}
+    .read a {
+        text-decoration: none;
+    color: black;
+    padding: 5px 5px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 50PX;
+    background-color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .read a:hover{
+        color: green;
+        background-color: red;
+    }
+    #read1{
+        margin-top: 45px;
+    }
+    #read2{
+        margin-top: 45px;
+    }
+    #read3{
+        margin-top: 25px;
+    }
+    #read4{
+        margin-top: 80px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: red;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+
+    }
+    footer{
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+    .footer a:hover{
+        color: darkgray;
+        background: black;
+    }
+    
