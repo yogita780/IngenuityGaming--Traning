@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .container{
     max-width: 1200px;
     /* border: 2px solid red; */
@@ -15,6 +20,8 @@ header{
     display: flex;
     justify-content: end;
     align-items: center;
+    /* position: fixed;
+    top: 0; */
 
 }
 article{
@@ -23,16 +30,17 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://media.istockphoto.com/photos/gamer-work-space-concept-top-view-a-gaming-gear-mouse-keyboard-in-picture-id1170073824?b=1&k=20&m=1170073824&s=170667a&w=0&h=E2W21WamGtyTwz03FlSwIaA24uYF3oLIVwZr0uAJCPY=");
+    background-image: url("https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29tcHV0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
     background-repeat: no-repeat;
     background-size: cover;
     color: whitesmoke;
-    text-shadow: 1px 2px red;
+    text-shadow: 1px 2px 5px red;
     font-size: 30px;
+
 
 }
 article h1{
-    text-shadow: 1px 2px red;
+    text-shadow: 1px 2px 5px red;
 }
 h1{
     text-align: center;
@@ -44,6 +52,7 @@ justify-content: space-evenly;
 background-color: black;
 
 
+
 }
 
 .imgbox{
@@ -51,6 +60,8 @@ background-color: black;
     height: 200px;
     /* background-color: rebeccapurple; */
     border-radius: 50%;
+    /* box-shadow: 5px 5px 5px red; */
+    overflow: hidden;
 }
 .imgbox img {
     border-radius: 50%;
@@ -99,9 +110,13 @@ aside > .box{
 .imgbox1{
     width:200px ;
     height: 400px;
-    background-color: lightskyblue;
+    background-color: lightgray;
     /* border-radius: 50%; */
+   
+    
 }
+
+
 /* footer{
     width: 100%;
     height: 10vh;
@@ -130,6 +145,8 @@ aside > .box{
 .nav a:hover{
     color: whitesmoke;
     background-color: black;
+    box-shadow: 2px 2px 3px white;
+    transform: scale(1.1);
 }
 .nav a.active {
     background-color: black;
@@ -139,8 +156,13 @@ aside > .box{
 .imgcontainer1{
     display: flex;
     justify-content: space-evenly;
-    background-color: lightgray;
+    background-color: white;
+    
 }
+.imgcontainer1 :hover{
+    transform: scale(1.1);
+}
+
     .read a {
         text-decoration: none;
     color: black;
@@ -150,16 +172,21 @@ aside > .box{
     margin-top: 50PX;
     background-color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px white;
+
     }
     .read a:hover{
         color: green;
         background-color: red;
+        transform: scale(1.1);
+
     }
     #read1{
         margin-top: 45px;
     }
     #read2{
-        margin-top: 45px;
+        margin-top: 30px;
     }
     #read3{
         margin-top: 25px;
@@ -167,20 +194,192 @@ aside > .box{
     #read4{
         margin-top: 80px;
     }
-    .footer a{
-        text-decoration: none;
-        color: red;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 15px;
-
-    }
     footer{
+        background-color: gray;
+        height:110vh;
+        width: 100%;;
+        border: 2px solid black;
+    }
+    /* .paragraphs .p1 p{
+        color:white;
+        width: 30%;
+        padding: 10px;
+    }
+    .paragraphs h2{
+        color:white;
+        margin-left: 20px;
+    }
+    .paragraphs .p2,.p3,.p4 p{
+        color:white;
+    
+       
+       
+    }
+    .paragraphs{
+        float:left;
+    } */
+    /* .paragraphs{
+        width:100%;
+    } */
+    
+    .paragraphs{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 40px;
+    
+        border-top: 2px solid white;
+    }
+    .img3{
+        overflow: hidden;
+    }
+    .img1{
+        width: 300px;
+        height:400px;
+        flex: left;
+        justify-content: left;
+    }
+    .paragraphs .img1{
+        color:white;
+        width:23%;
+        float:left;
+        padding: 5px;
+        /* margin-left: 20px;; */
+    }
+    /* .paragraphs ul{
+        float:left;
+        width:20%;
+    } */
+    .paragraphs .img4 h2{
+        margin-left: 20px;
+    
+    }
+    .paragraphs li{
+        color:white;
+        list-style: none;
+    }
+    .paragraphs h2{
+        color:white;
+    }
+    button:hover{
+        background-color: goldenrod;
+        transform: scale(1.1);
+       
+    }
+    button a:hover{
+        color:black;
+        text-shadow: 2px 3px 4px white;
+        transform: scale(1.1);
+        
+    }
+    .Register{
+        position: relative;
+        height: 100px;
+    }
+    .Register h2{
+        color:white;
         text-align: center;
-        margin-bottom: 50px;
+        /* position: relative; */
+    
+    }
+    .Register button{
+        padding: 8px;
+        background-color: red;
+        border-radius:7px;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 50vh; */
+        position: absolute;
+        top:50px;
+        left:75vh;
+    
+    }
+    .Register button:hover{
+        background-color:goldenrod;
+        text-shadow: 2px 2px 3px white;
+        transform: scale(1.1);
+    }
+    .Links{
+        height:100px;
+    }
+    .circles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+       
+    }
+    .circles .circle1,.circle2,.circle3,.circle4,.circle5{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        /* border:2px solid white; */
+        display: inline-flex;
+        justify-content: space-evenly;
+        margin-left: 15px;
+    }
+    .circles i{
+        font-size: 50px;
+    
+    }
+    .Thankyou{
+        height:100px;
+    }
+    .Thankyou h2,h3{
+        color:white;
+        text-align: center;
+       
+    
+    }
+    .Thankyou a{
+        text-decoration:underline;
+        color: black;
+    }
+    .Thankyou a h3{
+        text-decoration: none;
+        color:black;
+        font-size: 20px;
+    
+    }
+    .teamm h1{
+        margin : 20px ;
+        text-shadow: 2px 2px 2px red;
 
     }
-    .footer a:hover{
-        color: darkgray;
-        background: black;
+    .about h1{
+        margin : 20px ;
+        text-shadow: 2px 2px 2px red;
     }
-    
+    .tech h1{
+        margin : 20px ;
+        text-shadow: 2px 2px 2px red;
+    }
+    .foot h1{
+        margin : 30px ; 
+        text-shadow: 2px 2px 2px red;
+    }
+    .git a:hover {
+        background-color: black;
+        color: red;
+        transform: scale(1.1);
+        
+    }
+    .abcont p{
+        padding: 8px;
+    }
+    .html p{
+        padding: 4px;
+    }
+    .css p{
+        padding: 4px;
+    }
+    .boot p{
+        padding: 4px;
+    }
+    .js p{
+        padding: 4px;
+    }
+    .aboutpro {
+        margin: 5px;
+        text-shadow: 2px 2px 2px white;
+    }
