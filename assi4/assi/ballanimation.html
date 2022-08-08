@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(white,lightpink);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: gray; */
+
+    }
+    .box{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-image: linear-gradient(yellow 50%,green 50%);
+       animation: ball 2s linear infinite;
+       animation-fill-mode: both;
+       animation-direction: reverse;
+       margin-bottom: 13%;
+
+    }
+   
+   
+    @keyframes ball {
+       
+        0%{
+                transform: translateY(200px) rotate(360deg)
+            }
+            50%{
+                transform: translateY(0px)  rotate(180deg)
+            }
+           100%{
+                transform: translateY(200px)  rotate(0deg)
+            }
+            
+            
+        }
+        .shade{
+        width: 60px;
+        height: 30px;
+        background-color: gray;
+        border-radius: 60%;
+        transition: all 0.3s ease-in-out;
+        animation: shaw 2s linear infinite;
+
+        
+    }
+    @keyframes shaw {
+        0%{
+            transform:scale(1)
+        }
+        50%{
+            transform: scale(0.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+
+      
+        
+    }
+        
+    
+   .dot{
+       display: flex;
+   }
+       #dot1{
+        font-weight: bold;
+       animation: load 2s linear infinite;
+       
+       }
+       @keyframes  load{
+        0%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        
+       }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="shade">
+
+        </div>
+        <div class="dot">
+            <p>LOADING</p>
+            <p id="dot1" ><b>&nbsp. . .</b></p>
+        </div>
+        </div>
+       
+</body>
+</html>
