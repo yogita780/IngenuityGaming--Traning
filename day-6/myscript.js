@@ -13,6 +13,7 @@ document.write(dateF);
 
  var name = window.prompt("Please Enter your name");
  document.body.style.backgroundColor="pink";
+//  document.body.style.border="1px solid black";
  document.body.style.fontSize="30px";
  document.body.style.margin="250px 0px 0px 650px"
 // document.body.style.color="white";
