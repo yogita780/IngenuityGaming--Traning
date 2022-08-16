@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function stu(){
+            this.fname = "yogita";
+            this.lname= "balyan";
+
+            this.details = function() {
+                return "first name is :" + this.fname  +  "last name is :" + this.lname;
+            }
+        }
+        var obj = new stu();
+        alert(obj.details());
+    </script>
+</body>
+</html>
