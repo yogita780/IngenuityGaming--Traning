@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body{
+       
+background: #5EF0FF;
+background: -webkit-linear-gradient(left, #5EF0FF, #FF669A);
+background: -moz-linear-gradient(left, #5EF0FF, #FF669A);
+background: linear-gradient(to right, #5EF0FF, #FF669A);
+font-size: 30px;
+padding: 200px 600px ;
+    }
+</style>
 </head>
 <body>
     <script>
-        function addStr(str){
+        function addStr(){
+            var str = prompt("Enter anything with New! or without New! :");
             if(str.substring(0,4) === 'New!'){
                 return str;
             }
             return "New!"+str;
         }
 
-        document.write(addStr("New! person")+"<br>");
-        document.write(addStr("New! Person"));
+        document.write(addStr("New! person"));
+        
+        // document.write(addStr("New! Person"));
+        // document.body.style.backgroundColor = "linear-gradient(red, yellow)";
     </script>
 </body>
 </html>

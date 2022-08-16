@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body{
+            
+       
+background: #E9FF5E;
+background: -webkit-linear-gradient(left, #E9FF5E, #B866FF);
+background: -moz-linear-gradient(left, #E9FF5E, #B866FF);
+background: linear-gradient(to right, #E9FF5E, #B866FF);
+        font-size: 30px;
+        font-family: cursive;
+        padding: 300px 400px;
+        
+                }
+            </style>
 </head>
 <body>
     <script>
-        function frontback(str){
+        function frontback(){
+            var str = prompt("Enter String that you first 3 and last 3 character to make new word:");
             if(str.length >= 3){
                 str_len = 3;
 
@@ -17,8 +32,8 @@
                 return front + back;
             }else return str;
         }
-        document.write(frontback("ab")+"<br>");
-        document.write(frontback("ghvghvbh")+"<br>");
+        document.write(" String after execution of code :"+frontback());
+        // document.write(frontback("ghvghvbh")+"<br>");
     </script>
 </body>
 </html>

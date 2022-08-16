@@ -5,18 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+          body{
+            
+            
+background: #79FF5E;
+background: -webkit-linear-gradient(left, #79FF5E, #66B4FF);
+background: -moz-linear-gradient(left, #79FF5E, #66B4FF);
+background: linear-gradient(to right, #79FF5E, #66B4FF);
+            font-size: 40px;
+            font-family: cursive;
+            padding: 200px 400px;
+            
+                    }
+    </style>
 </head>
 <body>
     <script>
         function add() {
             var sum = 0;
-            for(var i=0;i<arguments.length;i++){
-                sum += arguments[i];
+            while(true){
+                var num = parseInt(prompt("Enter a positive for summation and 0 to terminate:"));
+                if(num>0){
+                    sum += num;
+                }else{
+                    break;
+                }
             }
             return sum;
         }
-        alert(add(3,4));
-        alert(add(3,4,6));
+        document.write("The sum of given numbers : "+add());
+        document.body.style.backgroundColor = "lightblue";
+        document.body.style.fontSize = "40px";
+        // document.body.style.fontcolor = "light pink"
+        document.body.style.padding = "100px 100px";
+            // for(var i=0;i<arguments.length;i++){
+            //     sum += arguments[i];
+        //     }
+        //     return sum;
+        // }
+        // alert(add(3,4));
+        // alert(add(3,4,6));
 
     </script>
 </body>
