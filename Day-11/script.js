@@ -30,8 +30,8 @@ function start(){
             moles[ran].style.visibility="hidden";
         }, 900);
     }, 1000);
-     
 }
+
 function clicked(){
     document.getElementById("currentPoint").innerHTML=counter++;
      
