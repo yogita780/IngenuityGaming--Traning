@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web stroage</title>
+</head>
+<body>
+    <h1>Local Stroage|Session Storage</h1>
+    <pre>
+    <label for="">Enter User name :</label> <input type="text" id="userName">
+
+    <button id="add">Store Information</button>
+</pre>
+<a href="details.html">sEE dEtails</a>
+<script>
+    //Selectors
+    var uname = document.getElementById("userName");
+    var btn = document.getElementById("add");
+
+    btn.onclick = storeData;
+    function storeData(){
+        var data = uname.value;
+        window.localStorage.setItem("Info",data)
+        alert("Data store in Local storage");
+    }9
+
+</script>
+</body>
+</html>
