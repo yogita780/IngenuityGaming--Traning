@@ -1,31 +1,16 @@
 const API_URL = "https://jsonplaceholder.typicode.com/users";
 
-function getApiData(url) {
-  console.log("We are good to go to call API using XHR ");
-  return new Promise((resolve, reject) => {
-    // create an instance of XHR
-    var request = new XMLHttpRequest();
-    request.open("GET", url);
-    request.send();
+async function getApiData(url) {
+  console.log(
+    "We are good to go to call API using Fetch with Async and await "
+  );
 
-    request.onload = () => {
-      console.log(request);
-
-      if (request.status === 200) {
-        resolve(request.response);
-      } else {
-        reject("Not able to fetch Data");
-      }
-    };
-  });
+  var data = await fetch(url);
+  var result = await data.json();
+  displayData(result);
 }
 
-getApiData(API_URL)
-  .then((val) => {
-    console.log(JSON.parse(val));
-    displayData(JSON.parse(val));
-  })
-  .catch((err) => console.log("Error" + err));
+getApiData(API_URL);
 
 function displayData(serverData) {
   for (var user of serverData) {
