@@ -1,12 +1,12 @@
-// window.onload=function(){
-//     setInterval(() => {
-//         stopLoader();
-//     },3000);
-// };
-// function stopLoader(){
-//     document.querySelector('.container').style.display = "none";
-//     document.getElementById("todo-container").style.display = "block";
-// };
+ window.onload=function(){
+     setInterval(() => {
+         stopLoader();
+     },3000);
+ };
+ function stopLoader(){
+     document.querySelector('.container').style.display = "none";
+     document.getElementById("todocon").style.display = "block";
+ };
 
 
 var todoInput = document.querySelector(".todo-input");

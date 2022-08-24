@@ -1,0 +1,81 @@
+body {
+    margin: 0%;
+    background-image: url("https://image.shutterstock.com/image-photo/old-brick-black-color-wall-260nw-1605128917.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2 {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.container {
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 35%;
+    background-color: gray;
+    border: 2px solid black;
+    box-shadow: 2px 5px 5px yellow;
+    text-align: center;
+    border-radius: 10%;
+}
+.name {
+    margin: 10px;
+    padding: 8px;
+    width: 35%;
+}
+input {
+    box-shadow:1px 3px 3px yellow;
+    outline: none;
+}
+input:hover {
+    font-size: 15px;
+    color: pink;
+    border: 2px solid yellow;
+}
+.mail {
+    margin: 10px;
+    padding: 8px;
+    width: 35%;
+}
+.pwrd {
+    padding: 8px;
+    width: 35%;
+}
+.checkbox {
+    margin: 4%;
+}
+.Position {
+    margin: 10px;
+    color: black;
+    padding: 8px;
+    width: 38%;
+}
+.Position:hover {
+    font-size: 15px;
+    color: blue;
+    border: 2px solid gray;
+}
+.gender {
+    margin: 10px;
+    color: black;
+    margin: 2%;
+    padding: 8px;
+    width: 38%;
+}
+.gender:hover {
+    font-size: 15px;
+    color: blue;
+    border: 2px solid white;
+}
+button {
+    margin: 2%;
+    padding: 9px;
+    border-radius: 10px;
+    color: black;
+    background-color: lightgreen;
+}
+button:hover {
+    background-color: red;
+    color: white;
+}
