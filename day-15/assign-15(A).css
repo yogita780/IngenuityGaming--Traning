@@ -1,0 +1,58 @@
+* {
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+.group{
+    padding: 15px 20px;
+    margin: 10px 10px;
+    background-color: skyblue;
+    margin-left: 35%;
+    margin-right: 36%;
+    margin-top: 1%;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px white;
+    text-shadow: 2px 2px 2px red;
+
+
+}
+h1{
+    margin: 10px 10px;
+    padding: 20px;
+    margin-left: 32%;
+    margin-right: 35%;
+    color: red;
+    background: black;
+    font-family: cursive;
+    text-align: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px white;
+    box-shadow: 2px 2px 2px skyblue;
+    border-radius: 6px;
+}
+body{
+ background-image: url("https://images4.alphacoders.com/758/thumb-1920-75886.jpg");
+
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+}
+/* img{
+    margin-left: 20%;
+    margin-bottom: 30%; 
+    margin-left: 70%;
+    margin-bottom: 20%; 
+ padding-bottom: 20% ;
+
+
+} */
+.container{
+    background-image: url("./earth-rotating-PA-300-wht-unscreen.gif");
+    background-repeat: no-repeat;
+     /* background-size: cover; */
+     box-shadow: 2px 2px 2px white;
+
+
+}

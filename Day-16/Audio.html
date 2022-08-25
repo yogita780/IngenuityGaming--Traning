@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Tags</title>
+</head>
+<body>
+    <audio controls loop>
+
+        <source src="./Isme Tera Ghata Mera Kuch Nahi Jata 128 Kbps.mp3" type="audio/mp3">
+        <source src="">
+        <source src="">
+    </audio>
+    <button id="btn1">Play</button>
+    <script>
+        //Selector
+        var myAudio = document.getElementById("myAudio");
+        // console.log(myAudio);
+        var btn = document.getElementById("btn1");
+        btn.onclick= performaudioTask;
+        function performaudioTask(){
+            myAudio.play();
+            x.load();
+            if(myAudio.autoplay = true) {
+               myAudio.muted == false;
+            }else{
+                x.muted = true;  
+            }
+           
+
+            // myAudio.src = "";
+        }
+
+        var  newAudio = new Audio();
+        newAudio.src="";
+        newAudio.play();
+</script>
+</body>
+</html>
