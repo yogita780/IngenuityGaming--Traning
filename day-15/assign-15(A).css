@@ -18,6 +18,9 @@ box-sizing: border-box;
 
 
 }
+/* #gp1{
+    text-shadow: 2px 2px 2px red; 
+} */
 h1{
     margin: 10px 10px;
     padding: 20px;
@@ -49,10 +52,10 @@ overflow: hidden;
 
 } */
 .container{
-    background-image: url("./earth-rotating-PA-300-wht-unscreen.gif");
-    background-repeat: no-repeat;
-     /* background-size: cover; */
-     box-shadow: 2px 2px 2px white;
+    background-image: url("./CoronavirusAnimation-unscreen.gif");
+     background-repeat: no-repeat;
+     background-size: cover; 
+     
 
 
 }

@@ -1,0 +1,13 @@
+#myCanvas { 
+ background-image: url("https://img.freepik.com/free-vector/futuristic-technological-background_79603-1097.jpg?size=626&ext=jpg&ga=GA1.2.853241972.1661498392");
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin-top: 150px;
+ margin-left: 500px;
+ border-radius: 10px;
+}
+body{
+     background-image: url("https://i.pinimg.com/736x/17/92/3e/17923e078afd1fc859746df775e346b1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
