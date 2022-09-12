@@ -1,0 +1,25 @@
+var StudentNS;
+(function (StudentNS) {
+    class Student {
+        constructor(fullname, passport) {
+            this.fullname = fullname;
+            this.passport = passport;
+        }
+        dispDetails() {
+            console.log(`Name :${this.fullname} | Passport:${this.passport}`);
+        }
+    }
+    StudentNS.Student = Student;
+})(StudentNS || (StudentNS = {}));
+var TeacherNS;
+(function (TeacherNS) {
+    class Teacher {
+        constructor(fn, sub) {
+            this.fn = fn;
+            this.sub = sub;
+            this.fullname = fn;
+            this.subjects = sub;
+        }
+    }
+    TeacherNS.Teacher = Teacher;
+})(TeacherNS || (TeacherNS = {}));

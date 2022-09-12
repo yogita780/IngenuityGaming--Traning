@@ -15,7 +15,7 @@ var gameState = "PLAY";
 var restartImg;
 
 function preload() {
-  bgImage = loadImage("./images/bgnew .jpg");
+  bgImage = loadImage("./images/bgnew.jpg");
   mario_running = loadAnimation(
     "images/mar1.png",
     "images/mar2.png",
